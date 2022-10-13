@@ -16,7 +16,8 @@
     <header class="header">
         <div class="container">
             <nav class="header-nav">
-                <a class="webstudio" href="./index.html" lang="en"><span class="web-logo">Web</span><span class="studio-logo">Studio</span></a>
+                <a class="webstudio" href="./index.html" lang="en"><span class="web-logo">Web</span><span
+                        class="studio-logo">Studio</span></a>
                 <ul class="header-nav-list">
                     <li class="header-nav-item"><a class="header-nav-link" href="./index.html">Студія</a></li>
                     <li class="header-nav-item"><a class="header-nav-link current" href="./portfolio.html">Портфоліо</a></li>
@@ -24,8 +25,20 @@
                 </ul>
             </nav>
             <ul class="header-address-list">
-                <li class="header-address-item"><a class="header-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="header-address-item"><a class="header-address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="header-address-item">
+                    <a class="header-address-link" href="mailto:info@devstudio.com">
+                        <svg class="nav-icon" width="16" height="12">
+                            <use href="./img_svg/symbol-defs.svg#icon-envelope"></use>
+                        </svg> info@devstudio.com
+                    </a>
+                </li>
+                <li class="header-address-item">
+                    <a class="header-address-link" href="tel:+380961111111">
+                        <svg class="nav-icon" width="10" height="16">
+                            <use href="./img_svg/symbol-defs.svg#icon-smartphone"></use>
+                        </svg> +38 096 111 11 11
+                    </a>
+                </li>
             </ul>
         </div>
 </header>
@@ -42,63 +55,63 @@
                     </ul>            
                     <ul class="offer-list">
                         <!-- li*9>img+h2+p -->
-                    <li>
+                    <li class="offer-item">
                         <img src="./img_portfolio/img(1).jpg" alt="Photo didn't load" width="370" height="294">
                         <div class="offer-div">
                             <h2 class="offer-h2">Технокряк</h2>
                             <p class="offer-p">Веб-сайт</p>
                         </div>    
                     </li>
-                    <li>
+                    <li class="offer-item">
                         <img src="./img_portfolio/img(2).jpg" alt="Photo didn't load" width="370" height="294">
                         <div class="offer-div">
                             <h2 class="offer-h2">Постер New Orlean vs Golden Star</h2>
                             <p class="offer-p">Дизайн</p>
                         </div>    
                     </li>
-                    <li>
+                    <li class="offer-item">
                         <img src="./img_portfolio/img(3).jpg" alt="Photo didn't load" width="370" height="294">
                         <div class="offer-div">
                             <h2 class="offer-h2">Ресторан Seafood</h2>
                             <p class="offer-p">Додаток</p>
                         </div>    
                     </li>
-                    <li>
+                    <li class="offer-item">
                         <img src="./img_portfolio/img(4).jpg" alt="Photo didn't load" width="370" height="294">
                         <div class="offer-div">
                             <h2 class="offer-h2">Проєкт Prime</h2>
                             <p class="offer-p">Маркетинг</p>
                         </div>    
                     </li>
-                    <li>
+                    <li class="offer-item">
                         <img src="./img_portfolio/img(5).jpg" alt="Photo didn't load" width="370" height="294">
                         <div class="offer-div">
                             <h2 class="offer-h2">Проєкт Boxes</h2>
                             <p class="offer-p">Додаток</p>
                         </div>    
                     </li>
-                    <li>
+                    <li class="offer-item">
                         <img src="./img_portfolio/img(6).jpg" alt="Photo didn't load" width="370" height="294">
                         <div class="offer-div">
                             <h2 class="offer-h2">Inspiration has no Borders</h2>
                             <p class="offer-p">Веб-сайт</p>
                         </div>    
                     </li>
-                    <li>
+                    <li class="offer-item">
                         <img src="./img_portfolio/img(7).jpg" alt="Photo didn't load" width="370" height="294">
                         <div class="offer-div">
                             <h2 class="offer-h2">Видання Limited Edition</h2>
                             <p class="offer-p">Дизайн</p>
                         </div>    
                     </li>
-                    <li>
+                    <li class="offer-item">
                         <img src="./img_portfolio/img(8).jpg" alt="Photo didn't load" width="370" height="294">
                         <div class="offer-div">
                             <h2 class="offer-h2">Проєкт LAB</h2>
                             <p class="offer-p">Маркетинг</p>
                         </div>    
                     </li>
-                    <li>
+                    <li class="offer-item">
                         <img src="./img_portfolio/img(9).jpg" alt="Photo didn't load" width="370" height="294">
                         <div class="offer-div">
                             <h2 class="offer-h2">Growing Business</h2>
@@ -109,18 +122,60 @@
             </div>
         </section>
     </main>
+
+    
     <footer class="footer">
-        <div class="container">
-            <a class="footer-webstudio" href="./index.html" lang="en"><span class="footer-web-logo">Web</span><span class="footer-studio-logo">Studio</span></a>
-            <address class="footer-address">
-                <ul class="footer-address-list">
-                    <li class="footer-address-item"><a class="address-navi-link white-color" 
-                        href="https://goo.gl/maps/CDmVxNwggr7XNZrp7" target="_blank" rel="noreferrer noopener">
-                            <!-- Открытие в новой вкладке --> м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li class="footer-address-item"><a class="address-navi-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="footer-address-item"><a class="address-navi-link" href="tel:380961111111">+38 096 111 11 11</a></li>
+        <div class="container flex">
+            <div class="">
+                <a class="footer-webstudio" href="./index.html" lang="en"><span class="footer-web-logo">Web</span><span
+                        class="footer-studio-logo">Studio</span></a>
+                <address class="footer-address">
+                    <ul class="footer-address-list">
+                        <li class="footer-address-item"><a class="address-navi-link white-color"
+                                href="https://goo.gl/maps/CDmVxNwggr7XNZrp7" target="_blank" rel="noreferrer noopener">
+                                <!-- Открытие в новой вкладке -->
+                                м. Київ, пр-т Лесі Українки, 26
+                            </a></li>
+                        <li class="footer-address-item"><a class="address-navi-link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-address-item"><a class="address-navi-link" href="tel:380961111111">+38 096 111 11
+                                11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="social-div">
+                <h2 class="join-title">приєднуйтесь</h2>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-link" href="#">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./img_svg/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="#">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./img_svg/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="#">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./img_svg/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="#">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./img_svg/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>

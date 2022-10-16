@@ -138,7 +138,8 @@ a{
 
 .header-address-link{
     padding: 32px 0px;
-    display: block;
+    display: flex;
+    align-items: center;
 
     color: var(--gray-color-p);
     font-weight: 500;
@@ -201,6 +202,8 @@ a{
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid black;
+    max-width: 1600px;
+    height: 600px;
     background-color: var(--header-footer-color);
     background-image:linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -384,6 +387,7 @@ a{
 
 .command-list-icon{
     display: flex;
+    margin-top: 16px;
     gap: 10px;
     justify-content: center;
 
@@ -393,7 +397,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
+    
 
     background-color: transparent;
     border-radius: 50%;
@@ -486,6 +490,7 @@ letter-spacing: 0.03em;
     justify-content: center;
     align-items: center;
     
+    /* border: 1px solid var(--icon-instagram); */
     border: 1px solid var(--icon-instagram);
     border-radius: 4px;
     width: 170px;
@@ -503,20 +508,7 @@ letter-spacing: 0.03em;
 }
 
 
-.company-icon{
-    /* fill: var(--icon-instagram); */
 
-}
-.company-icon:hover {
-    /* fill: var(--blue-color); */
-
-}
-
-.company-link:focus,
-.company-link:hover {
-    border: 1px solid var(--blue-color);
-
-}
 
 
 /* ----------------FOOTER----------------- */
@@ -528,6 +520,10 @@ letter-spacing: 0.03em;
     
 }
 
+.footer-address-div{
+    margin-right: 70px;
+}
+
 .footer-address{
 
     margin-top: 20px;
@@ -535,8 +531,11 @@ letter-spacing: 0.03em;
 }
 
 .container.flex{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
     display: flex;
-    gap: 70px;
     align-items: baseline;
 
 }
@@ -601,14 +600,11 @@ letter-spacing: 0.03em;
 }
 
 .join-title{
-    /* margin-top: 12px; */
-
     color: var(--white-color);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
+
 }
 
 
@@ -708,14 +704,19 @@ letter-spacing: 0.03em;
     
 }
 
-.offer-item:focus,
-.offer-item:hover
- {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-            0px 1px 1px rgba(0, 0, 0, 0.14),
-            0px 2px 1px rgba(0, 0, 0, 0.2);
+.offer-link:focus,
+.offer-link:hover {
+    display: block;
+    box-shadow: 12px 16px 22px -11px rgba(39, 52, 62, 0.5);
 
 }
+
+/* .offer-item:focus,
+.offer-item:hover
+ {
+    box-shadow: 12px 16px 22px -11px rgba(39, 52, 62, 0.5);
+
+} */
 
 
 .offer-div {
